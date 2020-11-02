@@ -16,7 +16,7 @@ import Title from "./common/Title";
 
 function App() {
   const bigTitle = {
-    title: "Tiêu đề bài trải nghiệm",
+    title: "@ #Tiêu đề bài trải nghiệm",
     bgcolor: "rgba(255,0,0,0.4)",
   };
 
@@ -38,21 +38,28 @@ function App() {
                   src={background1}
                   alt="tour-1"
                 />
-                <Box>
+                <Box
+                  style={{
+                    position: "absolute",
+                    top: 10,
+                    left: 10,
+                    color: "white",
+                    height: "400px",
+                  }}
+                >
+                  <Title title={bigTitle.title} bgcolor={bigTitle.bgcolor} />
                   <Title
                     title={bigTitle.title}
                     bgcolor={bigTitle.bgcolor}
-                    top={10}
-                    left={20}
+                    ml={2}
+                    fontSize="12px"
                   />
                   <Title
                     title={bigTitle.title}
                     bgcolor={bigTitle.bgcolor}
-                    top={70}
-                    left={20}
+                    ml={2}
                   />
                 </Box>
-
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
                     <Typography style={{ fontWeight: 700 }}>
@@ -109,12 +116,6 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     height: "360px",
-  },
-  text: {
-    position: "absolute",
-    top: 10,
-    left: 20,
-    color: "white",
   },
 }));
 
