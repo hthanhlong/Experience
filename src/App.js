@@ -39,8 +39,20 @@ function App() {
                   alt="tour-1"
                 />
                 <Box>
-                  <Title title={bigTitle.title} bgcolor={bigTitle.bgcolor} />
+                  <Title
+                    title={bigTitle.title}
+                    bgcolor={bigTitle.bgcolor}
+                    top={10}
+                    left={20}
+                  />
+                  <Title
+                    title={bigTitle.title}
+                    bgcolor={bigTitle.bgcolor}
+                    top={70}
+                    left={20}
+                  />
                 </Box>
+
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
                     <Typography style={{ fontWeight: 700 }}>

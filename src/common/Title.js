@@ -3,10 +3,10 @@ import { Typography, Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const Title = (props) => {
-  const { title, bgcolor } = props;
+  const { title, bgcolor, top, left } = props;
   const classes = useStyles();
   return (
-    <Typography className={classes.text}>
+    <Typography className={classes.text} style={{ top: top, left: left }}>
       <Box style={{ backgroundColor: `${bgcolor}` }} p={1}>
         <Typography variant="h6">{title}</Typography>
       </Box>
@@ -17,8 +17,6 @@ const Title = (props) => {
 const useStyles = makeStyles((theme) => ({
   text: {
     position: "absolute",
-    top: 10,
-    left: 20,
     color: "white",
   },
 }));
