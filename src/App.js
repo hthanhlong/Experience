@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import {
   Grid,
   Typography,
@@ -13,8 +12,14 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
+import Title from "./common/Title";
 
 function App() {
+  const bigTitle = {
+    title: "Tiêu đề bài trải nghiệm",
+    bgcolor: "rgba(255,0,0,0.4)",
+  };
+
   const classes = useStyles();
   return (
     <Box component="div">
@@ -33,9 +38,9 @@ function App() {
                   src={background1}
                   alt="tour-1"
                 />
-                <Typography className={classes.text}>
-                  this is content in image
-                </Typography>
+                <Box>
+                  <Title title={bigTitle.title} bgcolor={bigTitle.bgcolor} />
+                </Box>
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
                     <Typography style={{ fontWeight: 700 }}>
@@ -95,7 +100,8 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     position: "absolute",
-    top: 0,
+    top: 10,
+    left: 20,
     color: "white",
   },
 }));
