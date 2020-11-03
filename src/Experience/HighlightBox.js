@@ -17,7 +17,7 @@ export default function Highlight(props) {
   return (
     <Box
       style={{
-        borderRadius: `${top}% ${right}% ${bottom}% ${left}%`,
+        borderRadius: `${top}px ${right}px ${bottom}px ${left}px`,
         backgroundColor: `${bgcolor}`,
       }}
       p={1}

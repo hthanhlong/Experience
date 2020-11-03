@@ -96,6 +96,7 @@ function App() {
                     <Box
                       style={{
                         width: "40px",
+                        height: "40px",
                       }}
                     >
                       <Highlight
@@ -125,37 +126,45 @@ function App() {
                   {[
                     {
                       id: 0,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 1,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 2,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 3,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 4,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 5,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 6,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
                     {
                       id: 7,
-                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                      urlImg:
+                        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
                     },
-                  ].map(i => (
+                  ].map((i) => (
                     <div>
                       <ListImagesIcon key={i.id} {...i} />
                     </div>
@@ -174,10 +183,13 @@ function App() {
                   }}
                 >
                   <Box>
-                    <TitleReview titleReviewUp="Xuất sắc" titleReviewDown="69 đánh giá"/>
+                    <TitleReview
+                      titleReviewUp="Xuất sắc"
+                      titleReviewDown="69 đánh giá"
+                    />
                   </Box>
                   <Box>
-                    <CountReview countReview="8.9"/>
+                    <CountReview countReview="8.9" />
                   </Box>
                 </Box>
                 <CardContent className={classes.content}>
