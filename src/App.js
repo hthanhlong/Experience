@@ -15,6 +15,8 @@ import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
 import Highlight from "./Experience/HighlightBox";
+import TitleReview from "./common/TitleReview";
+import CountReview from "./common/CountReview";
 
 function App() {
   const bigTitle = {
@@ -114,19 +116,69 @@ function App() {
                   flexWrap="wrap"
                   style={{
                     position: "absolute",
-                    top: 250,
+                    top: "50%",
                     left: 10,
-                    maxWidth: 260,
+                    maxWidth: "40%",
                   }}
                 >
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  {/* Value */}
+                  {[
+                    {
+                      id: 0,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 1,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 2,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 3,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 4,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 5,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 6,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                    {
+                      id: 7,
+                      urlImg: "https://test-html.hahalolo.com/assets/img/icon/transportation.png"
+                    },
+                  ].map(i => (
+                    <div>
+                      <ListImagesIcon key={i.id} {...i} />
+                    </div>
+                  ))}
+                </Box>
+
+                {/* Box Review */}
+                <Box
+                  display="flex"
+                  flexWrap="wrap"
+                  style={{
+                    position: "absolute",
+                    top: "53%",
+                    right: 10,
+                    color: "rgb(255, 255, 255)",
+                  }}
+                >
+                  <Box>
+                    <TitleReview titleReviewUp="Xuất sắc" titleReviewDown="69 đánh giá"/>
+                  </Box>
+                  <Box>
+                    <CountReview countReview="8.9"/>
+                  </Box>
                 </Box>
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
