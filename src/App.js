@@ -40,7 +40,7 @@ function App() {
   return (
     <Box component="div">
       <header>This is la HEADER</header>
-      <Box component="main" px={6}>
+      <Box component="main" style={{ padding: "1rem" }}>
         <Grid container spacing={2}>
           <Grid item xs={false} md={12} lg={3}>
             <Paper className={classes.paper}>Column one</Paper>
@@ -55,118 +55,42 @@ function App() {
                   alt="tour-1"
                 />
                 <Box
+                  component="div"
                   style={{
                     position: "absolute",
-                    top: 10,
-                    left: 10,
-                    color: "white",
-                  }}
-                >
-                  <Title
-                    title={bigTitle.title}
-                    bgcolor={bigTitle.bgcolor}
-                    fontSize="1.2rem"
-                  />
-                  <Box style={{ marginLeft: "0.8rem", width: "auto" }}>
-                    <Title
-                      title={titleTour.title}
-                      bgcolor={titleTour.bgcolor}
-                    />
-                    <Title
-                      title={titleHotel.title}
-                      bgcolor={titleHotel.bgcolor}
-                    />
-                    <Title
-                      title={titleBestSeller.title}
-                      bgcolor={titleBestSeller.bgcolor}
-                    />
-                  </Box>
-                </Box>
-                <Box
-                  style={{
-                    position: "absolute",
-                    top: 10,
-                    right: 10,
+                    top: 0,
+                    left: 0,
+                    right: 0,
                     color: "white",
                     backgroundColor: "yellow",
+                    padding: "1rem",
+                    display: "flex",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <Title
-                    title={bigTitle.title}
-                    bgcolor={bigTitle.bgcolor}
-                    fontSize="1.2rem"
-                  />
-                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
+                  <Box style={{ backgroundColor: "red" }}>
                     <Title
-                      title={titleTour.title}
-                      bgcolor={titleTour.bgcolor}
+                      title={bigTitle.title}
+                      bgcolor={bigTitle.bgcolor}
+                      fontSize="1.2rem"
                     />
-                    <Title
-                      title={titleHotel.title}
-                      bgcolor={titleHotel.bgcolor}
-                    />
-                    <Title
-                      title={titleBestSeller.title}
-                      bgcolor={titleBestSeller.bgcolor}
-                    />
+                    <Box style={{ marginLeft: "0.8rem", width: "auto" }}>
+                      <Title
+                        title={titleTour.title}
+                        bgcolor={titleTour.bgcolor}
+                      />
+                      <Title
+                        title={titleHotel.title}
+                        bgcolor={titleHotel.bgcolor}
+                      />
+                      <Title
+                        title={titleBestSeller.title}
+                        bgcolor={titleBestSeller.bgcolor}
+                      />
+                    </Box>
                   </Box>
-                </Box>
-                <Box
-                  style={{
-                    position: "absolute",
-                    bottom: 190,
-                    right: 10,
-                    color: "white",
-                    backgroundColor: "yellow",
-                  }}
-                >
-                  <Title
-                    title={bigTitle.title}
-                    bgcolor={bigTitle.bgcolor}
-                    fontSize="1.2rem"
-                  />
-                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
-                    <Title
-                      title={titleTour.title}
-                      bgcolor={titleTour.bgcolor}
-                    />
-                    <Title
-                      title={titleHotel.title}
-                      bgcolor={titleHotel.bgcolor}
-                    />
-                    <Title
-                      title={titleBestSeller.title}
-                      bgcolor={titleBestSeller.bgcolor}
-                    />
-                  </Box>
-                </Box>
-                <Box
-                  style={{
-                    position: "absolute",
-                    bottom: 190,
-                    left: 10,
-                    color: "white",
-                    backgroundColor: "yellow",
-                  }}
-                >
-                  <Title
-                    title={bigTitle.title}
-                    bgcolor={bigTitle.bgcolor}
-                    fontSize="1.2rem"
-                  />
-                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
-                    <Title
-                      title={titleTour.title}
-                      bgcolor={titleTour.bgcolor}
-                    />
-                    <Title
-                      title={titleHotel.title}
-                      bgcolor={titleHotel.bgcolor}
-                    />
-                    <Title
-                      title={titleBestSeller.title}
-                      bgcolor={titleBestSeller.bgcolor}
-                    />
+                  <Box style={{ backgroundColor: "green" }}>
+                    <Typography>Tra gop ne</Typography>
                   </Box>
                 </Box>
                 {/* Box ListImgIcon */}
