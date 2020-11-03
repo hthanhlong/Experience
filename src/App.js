@@ -14,6 +14,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
+import CountReview from "./common/CountReview";
+import TitleReview from "./common/TitleReview";
 
 function App() {
   const bigTitle = {
@@ -34,6 +36,11 @@ function App() {
   const titleBestSeller = {
     title: "Bán chạy nhất/ Siêu tiết kiệm",
     bgcolor: "rgba(220,53,69,0.7)",
+  };
+
+  const titleReview = {
+    title: "8.9",
+    bgcolor: "rgba(40,167,69,0.7)",
   };
 
   const classes = useStyles();
@@ -99,9 +106,9 @@ function App() {
                   flexWrap="wrap"
                   style={{
                     position: "absolute",
-                    top: 250,
+                    top: "50%",
                     left: 10,
-                    maxWidth: 260,
+                    maxWidth: "40%",
                   }}
                 >
                   <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
@@ -112,6 +119,29 @@ function App() {
                   <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
                   <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
                   <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                </Box>
+
+                {/* Box Review */}
+                <Box
+                  display="flex"
+                  flexWrap="wrap"
+                  style={{
+                    position: "absolute",
+                    top: "53%",
+                    right: 10,
+                    color: "rgb(255, 255, 255)",
+                  }}
+                >
+                  <Box 
+                  style={{
+                    marginRight: "0.1rem",
+                  }}
+                  >
+                    <TitleReview />
+                  </Box>
+                  <Box>
+                    <CountReview />
+                  </Box>
                 </Box>
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
