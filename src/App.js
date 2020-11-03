@@ -73,7 +73,7 @@ function App() {
                     color: "white",
                     padding: "1rem",
                     display: "flex",
-
+                    backgroundColor: "yellow",
                     justifyContent: "space-between",
                   }}
                 >
@@ -117,9 +117,10 @@ function App() {
                     padding: "1rem",
                     display: "flex",
                     justifyContent: "space-between",
+                    backgroundColor: "orange",
                   }}
                 >
-                  <Box display="flex" flexWrap="wrap" width="40%">
+                  <Box display="flex" flexWrap="wrap" bgcolor="red" width="35%">
                     <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
                     <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
                     <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
@@ -131,7 +132,7 @@ function App() {
                   </Box>
 
                   {/* Box Review */}
-                  <Box display="flex" height="100%">
+                  <Box display="flex" style={{ backgroundColor: "green" }}>
                     <TitleReview />
                     <CountReview />
                   </Box>
