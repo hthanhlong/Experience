@@ -18,7 +18,22 @@ import ListImagesIcon from "./common/ListImagesIcon";
 function App() {
   const bigTitle = {
     title: "@ #Tiêu đề bài trải nghiệm",
-    bgcolor: "rgba(255,0,0,0.4)",
+    bgcolor: "rgba(22,105,134,0.7)",
+  };
+
+  const titleTour = {
+    title: "#Chủ đề Tour",
+    bgcolor: "rgba(40,167,69,0.7)",
+  };
+
+  const titleHotel = {
+    title: "@ tên Hotel/Shop",
+    bgcolor: "rgba(0,0,0,0.7)",
+  };
+
+  const titleBestSeller = {
+    title: "Bán chạy nhất/ Siêu tiết kiệm",
+    bgcolor: "rgba(220,53,69,0.7)",
   };
 
   const classes = useStyles();
@@ -45,21 +60,114 @@ function App() {
                     top: 10,
                     left: 10,
                     color: "white",
-                    height: "400px",
                   }}
                 >
-                  <Title title={bigTitle.title} bgcolor={bigTitle.bgcolor} />
                   <Title
                     title={bigTitle.title}
                     bgcolor={bigTitle.bgcolor}
-                    ml={2}
-                    fontSize="12px"
+                    fontSize="1.2rem"
                   />
+                  <Box style={{ marginLeft: "0.8rem", width: "auto" }}>
+                    <Title
+                      title={titleTour.title}
+                      bgcolor={titleTour.bgcolor}
+                    />
+                    <Title
+                      title={titleHotel.title}
+                      bgcolor={titleHotel.bgcolor}
+                    />
+                    <Title
+                      title={titleBestSeller.title}
+                      bgcolor={titleBestSeller.bgcolor}
+                    />
+                  </Box>
+                </Box>
+                <Box
+                  style={{
+                    position: "absolute",
+                    top: 10,
+                    right: 10,
+                    color: "white",
+                    backgroundColor: "yellow",
+                  }}
+                >
                   <Title
                     title={bigTitle.title}
                     bgcolor={bigTitle.bgcolor}
-                    ml={2}
+                    fontSize="1.2rem"
                   />
+                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
+                    <Title
+                      title={titleTour.title}
+                      bgcolor={titleTour.bgcolor}
+                    />
+                    <Title
+                      title={titleHotel.title}
+                      bgcolor={titleHotel.bgcolor}
+                    />
+                    <Title
+                      title={titleBestSeller.title}
+                      bgcolor={titleBestSeller.bgcolor}
+                    />
+                  </Box>
+                </Box>
+                <Box
+                  style={{
+                    position: "absolute",
+                    bottom: 190,
+                    right: 10,
+                    color: "white",
+                    backgroundColor: "yellow",
+                  }}
+                >
+                  <Title
+                    title={bigTitle.title}
+                    bgcolor={bigTitle.bgcolor}
+                    fontSize="1.2rem"
+                  />
+                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
+                    <Title
+                      title={titleTour.title}
+                      bgcolor={titleTour.bgcolor}
+                    />
+                    <Title
+                      title={titleHotel.title}
+                      bgcolor={titleHotel.bgcolor}
+                    />
+                    <Title
+                      title={titleBestSeller.title}
+                      bgcolor={titleBestSeller.bgcolor}
+                    />
+                  </Box>
+                </Box>
+                <Box
+                  style={{
+                    position: "absolute",
+                    bottom: 190,
+                    left: 10,
+                    color: "white",
+                    backgroundColor: "yellow",
+                  }}
+                >
+                  <Title
+                    title={bigTitle.title}
+                    bgcolor={bigTitle.bgcolor}
+                    fontSize="1.2rem"
+                  />
+                  <Box style={{ marginLeft: "1rem", width: "auto" }}>
+                    <Title
+                      title={titleTour.title}
+                      bgcolor={titleTour.bgcolor}
+                    />
+                    <Title
+                      title={titleHotel.title}
+                      bgcolor={titleHotel.bgcolor}
+                    />
+                    <Title
+                      title={titleBestSeller.title}
+                      bgcolor={titleBestSeller.bgcolor}
+                    />
+                  </Box>
                 </Box>
                 {/* Box ListImgIcon */}
                 <Box
