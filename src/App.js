@@ -15,6 +15,8 @@ import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import CountReview from "./common/CountReview";
+import TitleReview from "./common/TitleReview";
 
 function App() {
   const bigTitle = {
@@ -37,11 +39,17 @@ function App() {
     },
   ];
 
+  const titleReview = {
+    title: "8.9",
+    bgcolor: "rgba(40,167,69,0.7)",
+  };
+
   const classes = useStyles();
+
   return (
     <Box component="div">
       <header>This is la HEADER</header>
-      <Box component="main" style={{ padding: "1rem" }}>
+      <Box component="main" className={classes.supContainer}>
         <Grid container spacing={2}>
           <Grid item xs={false} md={12} lg={3}>
             <Paper className={classes.paper}>Column one</Paper>
@@ -63,9 +71,9 @@ function App() {
                     left: 0,
                     right: 0,
                     color: "white",
-
                     padding: "1rem",
                     display: "flex",
+
                     justifyContent: "space-between",
                   }}
                 >
@@ -95,31 +103,41 @@ function App() {
                         </div>
                       </div>
                     </Box>
-
                     <Typography>50% ne</Typography>
                   </Box>
                 </Box>
-                {/* Box ListImgIcon */}
                 <Box
-                  display="flex"
-                  flexWrap="wrap"
+                  component="div"
                   style={{
                     position: "absolute",
-                    top: 250,
-                    left: 10,
-                    maxWidth: 260,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    color: "white",
+                    padding: "1rem",
+                    display: "flex",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <Box display="flex" flexWrap="wrap" width="40%">
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  </Box>
+
+                  {/* Box Review */}
+                  <Box display="flex" height="100%">
+                    <TitleReview />
+                    <CountReview />
+                  </Box>
                 </Box>
               </Card>
+              <Typography>Day la content</Typography>
             </Paper>
           </Grid>
           <Grid item xs={false} md={12} lg={3}>
@@ -133,6 +151,14 @@ function App() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  supContainer: {
+    padding: "0 3rem",
+
+    [theme.breakpoints.down("sm")]: {
+      padding: 0,
+    },
+  },
+
   paper: {
     height: "500px",
     width: "100%",
