@@ -6,6 +6,7 @@ import {
   Paper,
   CardMedia,
   Card,
+  Avatar,
 } from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
@@ -81,6 +82,10 @@ function App() {
     },
   ];
 
+  const HighlightDT = {
+    label: "-50%",
+  };
+
   const classes = useStyles();
 
   return (
@@ -134,7 +139,16 @@ function App() {
                       </div>
                     </div>
                   </Box>
-                  <Typography>50% ne</Typography>
+                  <Avatar
+                    style={{
+                      fontSize: "0.9rem",
+                      backgroundColor: "rgba(255,0,0,0.6)",
+                      marginTop: "0.2rem",
+                      marginLeft: "auto",
+                    }}
+                  >
+                    {HighlightDT.label}
+                  </Avatar>
                 </Box>
               </Box>
               <Box component="div" className={classes.boxContainer2}>
