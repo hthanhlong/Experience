@@ -1,28 +1,31 @@
 import React from "react";
-import { Avatar } from "@material-ui/core";
+import { Box, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import DriveEtaIcon from "@material-ui/icons/DriveEta";
-
 const ListImagesIcon = (props) => {
   const classes = useStyles();
 
   return (
-    <Avatar alt="a" className={classes.icon}>
-      <DriveEtaIcon fontSize="small" color="inherit" />
-    </Avatar>
+    <Box className={classes.styleBox}>
+      <Avatar alt="" src={props.urlImg} className={classes.large} />
+    </Box>
   );
 };
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    width: "30px",
-    height: "30px",
-    margin: theme.spacing(0.2),
-    backgroundColor: "rgba(255,255,255,0.7)",
+  large: {
+    width: theme.spacing(4.2),
+    height: theme.spacing(4.2),
+  },
+  styleBox: {
     "&:hover": {
+      background: "rgba(255,255,255,0.9)",
       cursor: "pointer",
       transform: "scale3d(1.12, 1.12, 1)",
     },
+    backgroundColor: "rgba(255,255,255,0.7)",
+    borderRadius: "100%",
+    marginRight: "0.1rem",
+    marginTop: "0.1rem",
   },
 }));
 

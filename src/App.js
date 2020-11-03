@@ -39,6 +39,49 @@ function App() {
     },
   ];
 
+  const iconList = [
+    {
+      id: 0,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 1,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 2,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 3,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 4,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 5,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 6,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 7,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+  ];
+
   const titleReview = {
     title: "8.9",
     bgcolor: "rgba(40,167,69,0.7)",
@@ -73,7 +116,7 @@ function App() {
                     color: "white",
                     padding: "1rem",
                     display: "flex",
-                    backgroundColor: "yellow",
+
                     justifyContent: "space-between",
                   }}
                 >
@@ -116,25 +159,26 @@ function App() {
                     color: "white",
                     padding: "1rem",
                     display: "flex",
+
                     justifyContent: "space-between",
-                    backgroundColor: "orange",
                   }}
                 >
-                  <Box display="flex" flexWrap="wrap" bgcolor="red" width="35%">
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
-                    <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  {/* box listIcon*/}
+                  <Box display="flex" flexWrap="wrap" width="40%">
+                    {iconList &&
+                      iconList.map((i) => (
+                        <div>
+                          <ListImagesIcon key={i.id} {...i} />
+                        </div>
+                      ))}
                   </Box>
-
-                  {/* Box Review */}
-                  <Box display="flex" style={{ backgroundColor: "green" }}>
-                    <TitleReview />
-                    <CountReview />
+                  {/* box review*/}
+                  <Box display="flex" height="100%">
+                    <TitleReview
+                      titleReviewUp="Xuất sắc"
+                      titleReviewDown="69 đánh giá"
+                    />
+                    <CountReview countReview="8.9" />
                   </Box>
                 </Box>
               </Card>
