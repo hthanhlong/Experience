@@ -13,6 +13,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
+import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+import CountReview from "./common/CountReview";
 import TitleReview from "./common/TitleReview";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -22,21 +24,70 @@ function App() {
     bgcolor: "rgba(22,105,134,0.7)",
   };
 
-  const titleTour = {
-    title: "#Chủ đề Tour",
-    bgcolor: "rgba(40,167,69,0.7)",
-  };
+  const supTitle = [
+    {
+      title: "#Chủ đề Tour",
+      bgcolor: "rgba(40,167,69,0.7)",
+    },
+    {
+      title: "@ tên Hotel/Shop",
+      bgcolor: "rgba(0,0,0,0.7)",
+    },
+    {
+      title: "Bán chạy nhất/ Siêu tiết kiệm",
+      bgcolor: "rgba(220,53,69,0.7)",
+    },
+  ];
 
-  const titleHotel = {
-    title: "@ tên Hotel/Shop",
-    bgcolor: "rgba(0,0,0,0.7)",
-  };
+  const iconList = [
+    {
+      id: 0,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 1,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 2,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 3,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 4,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 5,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 6,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+    {
+      id: 7,
+      urlImg:
+        "https://test-html.hahalolo.com/assets/img/icon/transportation.png",
+    },
+  ];
 
   const HighlightDT = {
     label: "-50%",
   };
 
   const classes = useStyles();
+
   return (
     <Box component="div">
       <CssBaseline />

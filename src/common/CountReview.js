@@ -19,9 +19,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(40,167,69,0.7)",
     height: "100%",
     textAlign: "center",
-    borderTopRightRadius: "14px",
-    borderTopLeftRadius: "14px",
-    borderBottomRightRadius: "14px",
+    borderRadius: '14px 14px 14px 0'
   },
   styleTypography: {
     lineHeight: "48px",
