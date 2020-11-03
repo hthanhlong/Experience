@@ -13,6 +13,7 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
+import ListImagesIcon from "./common/ListImagesIcon";
 
 function App() {
   const bigTitle = {
@@ -59,6 +60,26 @@ function App() {
                     bgcolor={bigTitle.bgcolor}
                     ml={2}
                   />
+                </Box>
+                {/* Box ListImgIcon */}
+                <Box
+                  display="flex"
+                  flexWrap="wrap"
+                  style={{
+                    position: "absolute",
+                    top: 250,
+                    left: 10,
+                    maxWidth: 260,
+                  }}
+                >
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
+                  <ListImagesIcon urlImg="https://test-html.hahalolo.com/assets/img/icon/transportation.png" />
                 </Box>
                 <CardContent className={classes.content}>
                   <Link style={{ textAlign: "left" }}>
