@@ -10,7 +10,7 @@ const TitleReview = (props) => {
       <Typography className={classes.styleTypography}>
         {props.titleReviewUp}
       </Typography>
-      <Typography >{props.titleReviewDown}</Typography>
+      <Typography>{props.titleReviewDown}</Typography>
     </Box>
   );
 };

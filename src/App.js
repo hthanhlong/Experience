@@ -15,7 +15,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
-import Highlight from "./Experience/HighlightBox";
 import TitleReview from "./common/TitleReview";
 import CountReview from "./common/CountReview";
 

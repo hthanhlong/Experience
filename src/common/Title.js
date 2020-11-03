@@ -1,18 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 
 const Title = (props) => {
   const { title, bgcolor, fontSize } = props;
+
+  const classes = useStyles(bgcolor);
+
   return (
     <Box
-      style={{
-        backgroundColor: `${bgcolor}`,
-        width: "fit-content",
-        borderRadius: "0.3rem",
-        padding: "0.1rem 0.5rem",
-      }}
+      className={classes.titlebox}
+      style={{ backgroundColor: `${bgcolor}` }}
       mb={1}
     >
       <Typography
@@ -37,8 +36,16 @@ Title.propTypes = {
 
 Title.defaultProps = {
   title: "hello world",
-  fontSize: "0.8rem",
+  fontSize: "0.9rem",
   width: "fit-content",
 };
+
+const useStyles = makeStyles((theme, bgcolor) => ({
+  titlebox: {
+    width: "fit-content",
+    borderRadius: theme.spacing(0.7),
+    padding: theme.spacing(0.3, 1),
+  },
+}));
 
 export default Title;

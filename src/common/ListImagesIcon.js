@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Avatar,
-} from "@material-ui/core";
+import { Box, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 const ListImagesIcon = (props) => {
   const classes = useStyles();
@@ -20,9 +17,9 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(4.2),
   },
   styleBox: {
-    '&:hover': {
+    "&:hover": {
       background: "rgba(255,255,255,0.9)",
-      cursor: 'pointer',
+      cursor: "pointer",
       transform: "scale3d(1.12, 1.12, 1)",
     },
     backgroundColor: "rgba(255,255,255,0.7)",
