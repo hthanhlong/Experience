@@ -14,6 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
 import Title from "./common/Title";
 import ListImagesIcon from "./common/ListImagesIcon";
+import Highlight from "./Experience/HighlightBox";
 
 function App() {
   const bigTitle = {
@@ -62,7 +63,6 @@ function App() {
                     left: 0,
                     right: 0,
                     color: "white",
-                    backgroundColor: "yellow",
                     padding: "1rem",
                     display: "flex",
                     justifyContent: "space-between",
@@ -89,8 +89,23 @@ function App() {
                       />
                     </Box>
                   </Box>
-                  <Box style={{ backgroundColor: "green" }}>
+                  <Box>
                     <Typography>Tra gop ne</Typography>
+                    <Box
+                      style={{
+                        width: "40px",
+                      }}
+                    >
+                      <Highlight
+                        title="-50%"
+                        bgcolor="rgba(225,20,22,0.7)"
+                        top={100}
+                        right={100}
+                        bottom={100}
+                        left={100}
+                        variant="caption"
+                      />
+                    </Box>
                   </Box>
                 </Box>
                 {/* Box ListImgIcon */}
