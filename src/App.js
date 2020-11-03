@@ -9,6 +9,7 @@ import {
   CardContent,
   Link,
   Button,
+  Avatar,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import background1 from "./assets/images/tour-1.jpg";
@@ -37,6 +38,10 @@ function App() {
   const titleBestSeller = {
     title: "Bán chạy nhất/ Siêu tiết kiệm",
     bgcolor: "rgba(220,53,69,0.7)",
+  };
+
+  const HighlightDT = {
+    label: "-50%",
   };
 
   const classes = useStyles();
@@ -93,22 +98,14 @@ function App() {
                   </Box>
                   <Box>
                     <Typography>Tra gop ne</Typography>
-                    <Box
+                    <Avatar
                       style={{
-                        width: "40px",
-                        height: "40px",
+                        fontSize: "0.9rem",
+                        backgroundColor: "rgba(255,0,0,0.6)",
                       }}
                     >
-                      <Highlight
-                        title="-50%"
-                        bgcolor="rgba(225,20,22,0.7)"
-                        top={100}
-                        right={100}
-                        bottom={100}
-                        left={100}
-                        variant="caption"
-                      />
-                    </Box>
+                      {HighlightDT.label}
+                    </Avatar>
                   </Box>
                 </Box>
                 {/* Box ListImgIcon */}
